@@ -1,4 +1,4 @@
-# Todo List Chrome Extension
+# <img width="25" alt="Logo" src="https://github.com/user-attachments/assets/b4d78e8e-2233-41ed-94af-a0f4713d9c65" /> Todo List Chrome Extension
 Chrome extension to help you stay organized and productive. It is a to-do list manager with a simple and easy-to-use interface that lets you add, track, and manage your tasks directly in your browser.
 We used HTML to create the structure of the extension, CSS to make it look good, and JavaScript to add interactive features and make it work smoothly.
 
