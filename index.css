@@ -1,0 +1,134 @@
+html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 250px;
+    min-height: 250px;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    background-color: #E9EFEC;
+    color: #2A363B;
+    margin: 0px;
+}
+
+.heading {
+    text-align: center;
+    background-color: #16423C;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.inputsection {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    outline: 0.5px solid #16423C;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inputsection textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: transparent;
+}
+
+.content {
+    padding: 5px;
+}
+
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.task {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    gap: 5px;
+    background-color: #C4DAD2;
+    color: #16423C;
+    border-radius: 2px;
+    padding: 5;
+}
+
+.task > div:first-child {
+    display: flex; flex-direction: row; gap: 5px;
+}
+
+.task > div:last-child {
+    display: none;
+    flex-direction: row;
+    
+    width: 100%;
+    gap: 5px
+}
+
+.task:hover > div:last-child {
+    display: flex;
+    animation: fadeIn 0.1s ease-in-out;
+}
+
+.task:hover {
+    animation: expandHeight 0.2s ease-in-out;
+}
+
+.task button {
+    flex: 1;
+}
+
+.task.completed > :first-child {
+    text-decoration: line-through;
+}
+
+.task.completed {
+    opacity: 0.7;
+}
+
+.footersection {
+    padding-top: 30px;
+}
+
+.footersection button {
+    width: 100%;
+    border: none;
+    padding: 8px;
+    background-color: #6A9C89;
+    color: #16423C;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.btn {
+    background-color: #6A9C89;
+    color: #16423C;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 10px;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes expandHeight {
+    from { max-height: 30px; }
+    to { max-height: 50px; }
+}
